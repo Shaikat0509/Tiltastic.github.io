@@ -1,0 +1,401 @@
+/* --================ Start of global css ================-- */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Patrick+Hand');
+/*
+  font-family: 'Lato', sans-serif;
+  font-family: 'Patrick Hand', cursive;
+*/
+
+body {
+  color: #636363;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+.area {
+  width: 100%;
+  float: left;
+}
+a,button,input,textarea {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  outline: none !important;
+}
+.overlay-dark {
+  position: relative;
+  z-index: 1;
+}
+.overlay-dark::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+a.btn-trans,
+.btn-trans a,
+input.btn-trans,
+.btn-trans input,
+button.btn-trans,
+.btn-trans button {
+  color: #b3b3b3;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  border: 1px solid #b3b3b3;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+a.btn-trans:hover,
+.btn-trans a:hover,
+input.btn-trans:hover,
+.btn-trans input:hover,
+button.btn-trans:hover,
+.btn-trans button:hover,
+a.btn-trans:focus,
+.btn-trans a:focus,
+input.btn-trans:focus,
+.btn-trans input:focus,
+button.btn-trans:focus,
+.btn-trans button:focus {
+  color: #636363;
+  border-color: #ffffff;
+}
+a.btn-trans::after,
+.btn-trans a::after,
+button.btn-trans::after,
+.btn-trans button::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  transform: skewY(15deg);
+}
+a.btn-trans:hover::after,
+.btn-trans a:hover::after,
+button.btn-trans:hover::after,
+.btn-trans button:hover::after,
+a.btn-trans:focus::after,
+.btn-trans a:focus::after,
+button.btn-trans:focus::after,
+.btn-trans button:focus::after {
+  top: 0;
+  transform: skewY(0deg);
+}
+
+/* --================ End of global css ================-- */
+
+/* --================ Start of header css ================-- */
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1111;
+}
+.sidebar-left,
+.sidebar-right {
+  height: 100vh;
+	position: fixed;
+	top: 0;
+}
+.sidebar-left {
+  padding-left: 50px;
+  left: 0;
+}
+.sidebar-right {
+  padding-right: 50px;
+  right: 0;
+}
+.nav-items {
+  text-align: center;
+}
+.site-logo {
+	position: absolute;
+	top: 120px;
+	left: -6px;
+	transform: rotate(-90deg);
+}
+.site-logo h2 {
+	color: #b3b3b3;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 32px;
+	line-height: 32px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+  display: inline-block;
+  margin: 0;
+  transition: all 0.4s;
+}
+.site-logo a:hover h2 {
+  color: #ffffff;
+}
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -22px;
+  bottom: 70px;
+}
+.social-links::before {
+	content: "";
+	height: 50px;
+	width: 1px;
+	background: #b3b3b3;
+	position: absolute;
+	bottom: 105%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.social-links li {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-links li a {
+	color: #b3b3b3;
+	font-size: 20px;
+	line-height: 20px;
+}
+.social-links li a:hover {
+  color: #ffffff;
+}
+.button-wrap {
+	position: absolute;
+	top: 72px;
+	right: 50px;
+}
+.sidebar-right-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 18px;
+  right: 60px;
+}
+.sidebar-right-links li {
+  transform: rotate(90deg);
+  padding: 0 0 150px 0;
+}
+.sidebar-right-links li a {
+  color: #b3b3b3;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+.sidebar-right-links li a:hover,
+.sidebar-right-links li a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+.sidebar-right-links li a.contact-email {
+  position: relative;
+  left: -30px;
+}
+.sidebar-right-links li a.contact-email::before {
+  content: "";
+  height: 1px;
+  width: 50px;
+  background: #b3b3b3;
+  position: absolute;
+  top: 68%;
+  right: 105%;
+}
+.sidebar-right-links li a i {
+	margin-right: 7px;
+}
+.nav-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 72px 100px 0;
+  text-align: center;
+}
+.nav-items ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+.nav-items ul li a {
+  color: #b3b3b3;
+  font-size: 16px;
+  line-height: 22px;
+  position: relative;
+  padding-bottom: 7px;
+}
+.nav-items ul li a:hover,
+.nav-items ul li a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav-items ul li a::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #800080;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s;
+}
+.nav-items ul li a:hover::after,
+.nav-items ul li a:focus::after {
+  width: 100%;
+}
+.tilting-wrap {
+  overflow: hidden;
+  height: 100vh;
+}
+.tilt-bg {
+  width: 110%;
+  height: 110vh;
+  object-fit: cover;
+  position: relative;
+  position: relative;
+  top: -5vh;
+  left: -5%;
+}
+.tilt-circle {
+	height: 800px;
+	width: 800px;
+	background: #800080;
+	border-radius: 50%;
+	opacity: 0.8;
+	transform: scale(0);
+	animation: tilt-circle 5s infinite;
+}
+.tilt-circle-1 {
+	top: -50% !important;
+	left: -20% !important;
+}
+.tilt-rect {
+	height: 1px;
+	width: 200px;
+	background: #000000;
+	opacity: 0.7;
+	transform: rotate(-45deg);
+	animation: tilt-rect 7s infinite;
+}
+.tilt-rect-1 {
+	right: 15% !important;
+	top: 5% !important;
+	left: auto !important;
+}
+.tilt-triangle {
+   width: 0;
+   height: 0;
+   border-bottom: 0px solid #ffffff;
+   border-left: 0px solid transparent;
+   border-right: 0px solid transparent;
+   opacity: 0.7;
+   animation: tilt-triangle 4s infinite;
+   margin: 0 auto;
+   transform: translate(180deg);
+}
+.tilt-triangle-1 {
+	top: 60% !important;
+	width: 100%;
+}
+.hero-title {
+  color: rgba(255,255,255,0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 9vw;
+  z-index: 11;
+}
+
+@keyframes tilt-circle {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes tilt-rect {
+  0% {
+    height: 1px;
+    opacity: 0.9;
+  }
+  70% {
+    height: 700px;
+    opacity: 0.9;
+  }
+  100% {
+    height: 700px;
+    opacity: 0;
+  }
+}
+@keyframes tilt-triangle {
+  0% {
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    opacity: 0.7;
+  }
+  70% {
+    border-bottom-width: 500px;
+    border-left-width: 250px;
+    border-right-width: 250px;
+    opacity: 0.7;
+  }
+  100% {
+    border-bottom-width: 500px;
+    border-left-width: 250px;
+    border-right-width: 250px;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+/* --================ End of header css ================-- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
